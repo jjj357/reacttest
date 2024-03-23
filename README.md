@@ -1,5 +1,7 @@
 # reacttest
-Test for a react project
+Test for a react project.
+
+To see the react app working, run npm run dev and open http://localhost:3006/ in your web browser.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
