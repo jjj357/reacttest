@@ -132,6 +132,10 @@ export function BookList() {
           <Button
             variant="primary"
             onClick={() => {
+			  newBook.price = parseFloat(newBook.price);
+			  if(newBook.name === "" || newBook.price <= 0) {
+				return alert("Name and price should not be empty.");
+			  }
               if (modalTitle === "Add Book") {
                 dispatch(increment(newBook));
               } else if (modalTitle === "Edit Book") {
