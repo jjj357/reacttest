@@ -37,7 +37,15 @@ export function Book({ book, bookindex, showAddModal }) {
       >
         {book.description}
       </td>
-      <td>
+	  <td>
+        <button
+          className={styles.button}
+          onClick={() => showAddModal("Edit Book", bookindex)}
+        >
+          Edit
+        </button>
+      </td>
+	  <td>
         <button
           className={styles.button}
           onClick={() => dispatch(decrement(bookindex))}
