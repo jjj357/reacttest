@@ -3,8 +3,10 @@ Test for a react project.
 
 When run "npm start", if you get error message: "error:0308010C:digital envelope routines::unsupported", the solution is:
 run this command in the command line:
+
 set NODE_OPTIONS=--openssl-legacy-provider
-Then run "npm start" again. It will work!
+
+, then run "npm start" again. It will work!
 
 To see the react app working, run npm run dev and open http://localhost:3006/ in your web browser.
 
